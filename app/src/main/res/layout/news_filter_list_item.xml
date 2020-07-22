@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/news_filter_list_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/news_filter_list_item_guide_v1"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/search_margins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/news_filter_list_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/news_filter_list_margins"
+        android:paddingBottom="@dimen/news_filter_list_margins"
+        android:maxLines="1"
+        android:textAppearance="@style/HelperText.Body1"
+        app:layout_constraintStart_toStartOf="@+id/news_filter_list_item_guide_v1"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/news_filter_list_item_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/news_filter_list_item_text"
+        android:layout_marginEnd="@dimen/news_filter_list_margins"
+        app:layout_constraintBottom_toBottomOf="@id/news_filter_list_item_text"/>
+
+    <View
+        android:id="@+id/news_filter_list_item_divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/cool_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/news_filter_list_item_guide_v1"
+        app:layout_constraintTop_toBottomOf="@id/news_filter_list_item_text"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

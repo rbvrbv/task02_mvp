@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000000</color>
+    <color name="black_12">#1e000000</color>
+    <color name="black_38">#61000000</color>
+    <color name="black_54">#8a000000</color>
+    <color name="black_87">#de000000</color>
+
+    <color name="white">#ffffff</color>
+    <color name="white_70">#b3ffffff</color>
+
+    <color name="leaf">#66a636</color>
+    <color name="leaf_0">#0066a636</color>
+    <color name="leaf_50">#8066a636</color>
+
+    <color name="melon">#fe7460</color>
+    <color name="macaroni_and_cheese">#f2b630</color>
+    <color name="cool_grey">#aabbbb</color>
+    <color name="blue_grey">#627f8f</color>
+    <color name="light_grey">#eaede8</color>
+    <color name="divider_color">#d8d8d8</color>
+    <color name="divider_color_t">#00d8d8d8</color>
+    <color name="coral">#f65d49</color>
+    <color name="turtle_green">#7db354</color>
+    <color name="light_olive_green">#9ebf50</color>
+
+</resources>

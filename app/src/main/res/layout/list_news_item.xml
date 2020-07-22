@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_marginTop="@dimen/news_list_items_margin"
+    android:layout_marginEnd="@dimen/news_list_items_margin"
+    android:layout_marginStart="@dimen/news_list_items_margin">
+
+    <RelativeLayout
+        android:id="@+id/list_news_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/list_news_item_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="@dimen/news_list_img_margin"
+            android:layout_marginStart="@dimen/news_list_img_margin"
+            android:layout_marginEnd="@dimen/news_list_img_margin"
+            android:src="@drawable/img"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:src="@drawable/fade"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/news_list_img_negative_bottom_margin"
+            android:layout_below="@id/list_news_item_img">
+
+            <TextView
+                android:id="@+id/list_news_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textAppearance="@style/HelperText.NewsTitle"/>
+
+            <ImageView
+                android:id="@+id/list_news_item_decor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:layout_constraintTop_toBottomOf="@id/list_news_item_name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="@dimen/news_list_items_margin"
+                android:src="@drawable/decor"/>
+
+            <TextView
+                android:id="@+id/list_news_item_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@id/list_news_item_decor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="@dimen/news_list_body_margin"
+                android:layout_marginStart="@dimen/news_list_body_sides_margin"
+                android:layout_marginEnd="@dimen/news_list_body_sides_margin"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:textAppearance="@style/HelperText.TextStyle3"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/list_news_item_body"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="@dimen/news_list_date_margin"
+                android:gravity="center"
+                android:background="@color/turtle_green">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/search_pager_item_margin">
+
+                    <ImageView
+                        android:id="@+id/list_news_item_ico_calendar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_calendar"/>
+
+                    <TextView
+                        android:id="@+id/list_news_item_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/HelperText.NewsWhite"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

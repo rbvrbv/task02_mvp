@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/profile_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/leaf"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:textAppearance="@style/HelperText.ToolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_toolbar_title" />
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/profile_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintTop_toBottomOf="@+id/profile_toolbar"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/profile_guide_v1"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="@dimen/profile_layouts_content_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/profile_guide_v2"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="@dimen/profile_layouts_content_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/profile_main_picture"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintDimensionRatio="H,3:2"
+                app:layout_constraintTop_toTopOf="parent"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/user_icon_nobg"/>
+
+            <TextView
+                android:id="@+id/profile_fio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="@id/profile_guide_v1"
+                app:layout_constraintTop_toBottomOf="@id/profile_main_picture"
+                android:textAppearance="@style/HelperText.Header1"
+                android:layout_marginTop="@dimen/profile_layouts_content_margin"
+                android:text="@string/profile_text_name"/>
+
+            <TextView
+                android:id="@+id/profile_born_date_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="@id/profile_guide_v1"
+                app:layout_constraintTop_toBottomOf="@id/profile_fio"
+                android:layout_marginTop="@dimen/profile_layouts_content_caption_margin"
+                android:textAppearance="@style/HelperText.Title1"
+                android:text="@string/profile_text_born_date_title"/>
+
+            <TextView
+                android:id="@+id/profile_born_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="@id/profile_guide_v1"
+                app:layout_constraintTop_toBottomOf="@id/profile_born_date_title"
+                android:textAppearance="@style/HelperText.Body1"
+                android:text="@string/profile_text_born_date"/>
+
+            <TextView
+                android:id="@+id/profile_activity_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="@id/profile_guide_v1"
+                app:layout_constraintTop_toBottomOf="@id/profile_born_date"
+                android:layout_marginTop="@dimen/profile_layouts_content_caption_margin"
+                android:textAppearance="@style/HelperText.Title1"
+                android:text="@string/profile_text_activity_title"/>
+
+            <TextView
+                android:id="@+id/profile_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="@id/profile_guide_v1"
+                app:layout_constraintTop_toBottomOf="@id/profile_activity_title"
+                android:textAppearance="@style/HelperText.Body1"
+                android:text="@string/profile_text_activity"/>
+
+            <TextView
+                android:id="@+id/profile_push"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:layout_constraintLeft_toLeftOf="@id/profile_guide_v1"
+                app:layout_constraintTop_toBottomOf="@id/profile_activity"
+                android:layout_marginTop="@dimen/profile_layouts_content_push_section_margin"
+                android:textAppearance="@style/HelperText.Body1"
+                android:text="@string/profile_text_push"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/profile_push_switch"
+                android:checked="true"
+                app:layout_constraintRight_toRightOf="@id/profile_guide_v2"
+                app:layout_constraintTop_toBottomOf="@id/profile_activity"
+                android:layout_marginTop="@dimen/profile_layouts_content_push_section_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:id="@+id/profile_divider1"
+                app:layout_constraintTop_toBottomOf="@id/profile_push"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_layouts_content_divider_width"
+                android:layout_marginTop="@dimen/profile_layouts_content_divider_margin"
+                android:background="@color/cool_grey"/>
+
+            <TextView
+                android:id="@+id/profile_friends_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="@id/profile_guide_v1"
+                app:layout_constraintTop_toBottomOf="@id/profile_divider1"
+                android:layout_marginTop="@dimen/profile_layouts_content_margin"
+                android:textAppearance="@style/HelperText.Title1"
+                android:text="@string/profile_text_friends"/>
+
+            <ImageView
+                android:id="@+id/profile_avatar_3"
+                app:layout_constraintLeft_toLeftOf="@id/profile_guide_v1"
+                app:layout_constraintTop_toBottomOf="@id/profile_friends_title"
+                android:layout_width="@dimen/profile_layouts_content_bottom_avatar_size"
+                android:layout_height="@dimen/profile_layouts_content_bottom_avatar_size"
+                android:layout_marginTop="@dimen/profile_layouts_content_margin"
+                android:src="@drawable/avatar_3"/>
+
+            <TextView
+                android:id="@+id/profile_avatar_name_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/profile_layouts_content_avatar_text_margin"
+                android:textAppearance="@style/HelperText.Body1"
+                android:text="@string/profile_text_friend3"
+                app:layout_constraintBottom_toBottomOf="@+id/profile_avatar_3"
+                app:layout_constraintStart_toEndOf="@+id/profile_avatar_3"
+                app:layout_constraintTop_toTopOf="@+id/profile_avatar_3"/>
+
+            <ImageView
+                android:id="@+id/profile_avatar_2"
+                app:layout_constraintLeft_toLeftOf="@id/profile_guide_v1"
+                app:layout_constraintTop_toBottomOf="@id/profile_avatar_3"
+                android:layout_width="@dimen/profile_layouts_content_bottom_avatar_size"
+                android:layout_height="@dimen/profile_layouts_content_bottom_avatar_size"
+                android:layout_marginTop="@dimen/profile_layouts_content_margin"
+                android:src="@drawable/avatar_2"/>
+
+            <TextView
+                android:id="@+id/profile_avatar_name_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/profile_layouts_content_avatar_text_margin"
+                android:textAppearance="@style/HelperText.Body1"
+                android:text="@string/profile_text_friend2"
+                app:layout_constraintBottom_toBottomOf="@+id/profile_avatar_2"
+                app:layout_constraintStart_toEndOf="@+id/profile_avatar_2"
+                app:layout_constraintTop_toTopOf="@+id/profile_avatar_2"/>
+
+            <ImageView
+                android:id="@+id/profile_avatar_1"
+                app:layout_constraintLeft_toLeftOf="@id/profile_guide_v1"
+                app:layout_constraintTop_toBottomOf="@id/profile_avatar_2"
+                android:layout_width="@dimen/profile_layouts_content_bottom_avatar_size"
+                android:layout_height="@dimen/profile_layouts_content_bottom_avatar_size"
+                android:layout_marginTop="@dimen/profile_layouts_content_margin"
+                android:src="@drawable/avatar_1"/>
+
+            <TextView
+                android:id="@+id/profile_avatar_name_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/profile_layouts_content_avatar_text_margin"
+                android:textAppearance="@style/HelperText.Body1"
+                android:text="@string/profile_text_friend1"
+                app:layout_constraintBottom_toBottomOf="@+id/profile_avatar_1"
+                app:layout_constraintStart_toEndOf="@+id/profile_avatar_1"
+                app:layout_constraintTop_toTopOf="@+id/profile_avatar_1"/>
+
+            <View
+                android:id="@+id/profile_divider2"
+                app:layout_constraintTop_toBottomOf="@id/profile_avatar_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_layouts_content_divider_width"
+                android:layout_marginTop="@dimen/profile_layouts_content_divider_margin"
+                android:background="@color/cool_grey"/>
+
+            <Button
+                app:layout_constraintTop_toBottomOf="@id/profile_divider2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="@dimen/profile_layouts_content_margin"
+                android:layout_marginBottom="@dimen/profile_layouts_content_margin"
+                android:layout_width="@dimen/profile_layouts_content_button_logout_width"
+                android:layout_height="@dimen/profile_layouts_content_button_logout_height"
+                style="@style/HelperMaterialButton"
+                android:text="@string/profile_text_button"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

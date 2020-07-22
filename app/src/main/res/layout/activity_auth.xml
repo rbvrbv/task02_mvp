@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/auth_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/leaf">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/auth_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_back"
+                android:onClick="onBackClick"/>
+
+            <TextView
+                android:textAppearance="@style/HelperText.ToolbarTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/auth_toolbar_title" />
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/auth_guide_v1"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="@dimen/auth_margin_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/auth_guide_v2"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="@dimen/auth_margin_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/auth_title_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:textAppearance="@style/HelperText.TextStyle3"
+                android:layout_marginTop="@dimen/auth_margin_40"
+                android:layout_marginStart="@dimen/auth_title_left_margin"
+                android:layout_marginEnd="@dimen/auth_title_right_margin"
+                android:gravity="center_horizontal"
+                android:text="@string/auth_title_1"/>
+
+            <ImageView
+                android:id="@+id/auth_social_ico_vk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/auth_title_1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/auth_social_ico_fb"
+                android:layout_marginStart="@dimen/auth_social_icons_margin"
+                android:layout_marginTop="@dimen/auth_margin_20"
+                android:src="@drawable/vk"/>
+
+            <ImageView
+                android:id="@+id/auth_social_ico_fb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/auth_title_1"
+                app:layout_constraintLeft_toRightOf="@id/auth_social_ico_vk"
+                app:layout_constraintRight_toLeftOf="@id/auth_social_ico_ok"
+                android:layout_marginTop="@dimen/auth_margin_20"
+                android:src="@drawable/fb"/>
+
+            <ImageView
+                android:id="@+id/auth_social_ico_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/auth_title_1"
+                app:layout_constraintLeft_toRightOf="@id/auth_social_ico_fb"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginEnd="@dimen/auth_social_icons_margin"
+                android:layout_marginTop="@dimen/auth_margin_20"
+                android:src="@drawable/odnoklassniki"/>
+
+            <TextView
+                android:id="@+id/auth_title_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/auth_social_ico_vk"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:textAppearance="@style/HelperText.TextStyle3"
+                android:layout_marginTop="@dimen/auth_margin_40"
+                android:layout_marginStart="@dimen/auth_title_left_margin"
+                android:layout_marginEnd="@dimen/auth_title_right_margin"
+                android:gravity="center_horizontal"
+                android:text="@string/auth_title_2"/>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/auth_email_layout"
+                app:hintTextAppearance="@style/HelperText.Title1"
+                app:layout_constraintTop_toBottomOf="@id/auth_title_2"
+                app:layout_constraintLeft_toRightOf="@id/auth_guide_v1"
+                app:layout_constraintRight_toLeftOf="@id/auth_guide_v2"
+                android:layout_marginTop="@dimen/auth_margin_20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/auth_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:paddingTop="@dimen/auth_margin_13"
+                    android:inputType="textNoSuggestions"
+                    android:hint="@string/auth_hint_email"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:id="@+id/auth_email_divider"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/auth_divider_thickness"
+                app:layout_constraintTop_toBottomOf="@id/auth_email_layout"
+                app:layout_constraintLeft_toLeftOf="@id/auth_guide_v1"
+                app:layout_constraintRight_toLeftOf="@id/auth_guide_v2"
+                android:layout_marginTop="@dimen/auth_margin_3"
+                android:background="@color/black_12"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/auth_password_layout"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleDrawable="@drawable/password_toggle_selector"
+                app:hintTextAppearance="@style/HelperText.Title1"
+                app:layout_constraintTop_toBottomOf="@id/auth_email_layout"
+                app:layout_constraintLeft_toRightOf="@id/auth_guide_v1"
+                app:layout_constraintRight_toLeftOf="@id/auth_guide_v2"
+                android:layout_marginTop="@dimen/auth_margin_20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/auth_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:paddingTop="@dimen/auth_margin_13"
+                    android:inputType="textPassword"
+                    android:hint="@string/auth_hint_password"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <View
+                android:id="@+id/auth_password_divider"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/auth_divider_thickness"
+                app:layout_constraintTop_toBottomOf="@id/auth_password_layout"
+                app:layout_constraintLeft_toLeftOf="@id/auth_guide_v1"
+                app:layout_constraintRight_toLeftOf="@id/auth_guide_v2"
+                android:layout_marginTop="@dimen/auth_margin_3"
+                android:background="@color/black_12"/>
+
+            <Button
+                android:id="@+id/auth_button"
+                app:layout_constraintTop_toBottomOf="@id/auth_password_divider"
+                app:layout_constraintLeft_toLeftOf="@id/auth_guide_v1"
+                app:layout_constraintRight_toRightOf="@id/auth_guide_v2"
+                android:layout_marginTop="@dimen/auth_margin_26"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/auth_margin_13"
+                style="@style/HelperMaterialButton"
+                android:enabled="false"
+                android:onClick="onAuthClick"
+                android:text="@string/auth_text_button"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/auth_button"
+                app:layout_constraintLeft_toLeftOf="@id/auth_guide_v1"
+                android:textAppearance="@style/HelperText.Link"
+                android:layout_marginTop="@dimen/auth_margin_20"
+                android:text="@string/auth_text_forgot_password"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/auth_button"
+                app:layout_constraintRight_toLeftOf="@id/auth_guide_v2"
+                android:textAppearance="@style/HelperText.Link"
+                android:layout_marginTop="@dimen/auth_margin_20"
+                android:text="@string/auth_text_registration"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</LinearLayout>

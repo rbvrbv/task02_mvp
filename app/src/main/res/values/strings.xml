@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">task02_mvp</string>
+
+    <string name="splash_text_load">Загрузка…</string>
+
+    <string name="profile_toolbar_title">Профиль</string>
+
+    <string name="profile_text_name">Константинов Денис</string>
+    <string name="profile_text_born_date_title">Дата рождения</string>
+    <string name="profile_text_born_date">01 февраля 1980</string>
+    <string name="profile_text_activity_title">Сфера деятельности</string>
+    <string name="profile_text_activity">Хирургия, травматология</string>
+    <string name="profile_text_push">Получать push-уведомления</string>
+    <string name="profile_text_friends">Ваши друзья</string>
+    <string name="profile_text_button">Выйти из аккаунта</string>
+    <string name="profile_text_friend3">Дмитрий Валерьевич</string>
+    <string name="profile_text_friend2">Евгений Александров</string>
+    <string name="profile_text_friend1">Виктор Кузнецов</string>
+    <string name="profile_text_bottom_navigation_item1">Новости</string>
+    <string name="profile_text_bottom_navigation_item2">Поиск</string>
+    <string name="profile_text_bottom_navigation_item3">Помочь</string>
+    <string name="profile_text_bottom_navigation_item4">История</string>
+    <string name="profile_text_bottom_navigation_item5">Профиль</string>
+
+    <string name="edit_main_text_photo_select_photo">Выбрать фото</string>
+    <string name="edit_main_text_photo_take_photo">Сделать снимок</string>
+    <string name="edit_main_text_photo_delete_photo">Удалить</string>
+    <string name="edit_main_text_temp_filename_error">Ошибка при работе с временным файлом фотографии</string>
+    <string name="edit_main_text_filename_error">Ошибка при работе с выбранным файлом фотографии</string>
+
+    <string name="help_toolbar_title">Помочь</string>
+    <string name="help_category">Выберите категорию помощи</string>
+    <string name="help_category_children">Дети</string>
+    <string name="help_category_adults">Взрослые</string>
+    <string name="help_category_seniors">Пожилые</string>
+    <string name="help_category_animals">Животные</string>
+    <string name="help_category_events">Мероприятия</string>
+
+    <string name="search_toolbar_title">Поиск</string>
+    <string name="search_hint">Введите название организации</string>
+    <string name="search_tab_1">По мероприятиям</string>
+    <string name="search_tab_2">По НКО</string>
+    <string name="search_results1">Ключевые слова:</string>
+    <string name="search_results2">Результаты поиска:</string>
+    <string name="search_results3_1">мероприятие</string>
+    <string name="search_results3_2_4">мероприятия</string>
+    <string name="search_results3_many">мероприятий</string>
+    <string name="search_text_1">Напишите в строке поиска название мероприятия или ключевые слова</string>
+    <string name="search_text_2">Например,</string>
+    <string name="search_text_3"><u> мастер-класс, помощь</u></string>
+
+    <string name="news_toolbar_title">Новости</string>
+    <string name="news_filter_toolbar_title">Фильтр</string>
+    <string name="news_filter_category">Категории помощи</string>
+
+    <string name="event_detail_email_title">У вас есть вопросы?</string>
+    <string name="event_detail_email"><u>Напишите нам</u></string>
+    <string name="event_detail_site"><u>Перейти на сайт организации</u></string>
+    <string name="event_detail_bottom_text1">Помочь\nвещами</string>
+    <string name="event_detail_bottom_text2">Стать\nволонтером</string>
+    <string name="event_detail_bottom_text3">Проф.\nпомощь</string>
+    <string name="event_detail_bottom_text4">Помочь\nденьгами</string>
+
+    <string name="event_detail_no_mail_app">Нет почтового приложения</string>
+    <string name="event_detail_no_browser_app">Нет приложения браузера</string>
+
+    <string name="auth_toolbar_title">Авторизация</string>
+    <string name="auth_title_1">Для участия в мероприятиях войдите в приложение через социальные сети</string>
+    <string name="auth_title_2">Или авторизуйтесь через приложение</string>
+    <string name="auth_title_email">E-mail</string>
+    <string name="auth_hint_email">Введите e-mail</string>
+    <string name="auth_title_password">Пароль</string>
+    <string name="auth_hint_password">Введите пароль</string>
+    <string name="auth_text_button">ВОЙТИ</string>
+    <string name="auth_text_forgot_password"><u>Забыли пароль?</u></string>
+    <string name="auth_text_registration"><u>Регистрация</u></string>
+
+    <string name="events_json_error">Ошибка при работе JSON файлами новостей</string>
+    <string name="categories_json_error">Ошибка при работе JSON файлами категорий</string>
+
+    <plurals name="left">
+        <item quantity="zero">Осталось</item>
+        <item quantity="one">Остался</item>
+        <item quantity="other">Осталось</item>
+    </plurals>
+
+    <plurals name="days">
+        <item quantity="zero">дней</item>
+        <item quantity="one">%1$d день</item>
+        <item quantity="two">%1$d дня</item>
+        <item quantity="few">%1$d дня</item>
+        <item quantity="many">%1$d дней</item>
+        <item quantity="other">%1$d дней</item>
+    </plurals>
+
+    <plurals name="events">
+        <item quantity="zero">мероприятий</item>
+        <item quantity="one">мероприятие</item>
+        <item quantity="two">мероприятия</item>
+        <item quantity="few">мероприятия</item>
+        <item quantity="many">мероприятий</item>
+        <item quantity="other">мероприятий</item>
+    </plurals>
+
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="splash_top_margin">178dp</dimen>
+    <dimen name="splash_progressbar_size">38dp</dimen>
+    <dimen name="splash_load_text_margin">10dp</dimen>
+    <dimen name="splash_mss_icon_width">116dp</dimen>
+    <dimen name="profile_layouts_content_margin">20dp</dimen>
+    <dimen name="profile_layouts_content_caption_margin">22dp</dimen>
+    <dimen name="profile_layouts_content_push_section_margin">28dp</dimen>
+    <dimen name="profile_layouts_content_divider_margin">18dp</dimen>
+    <dimen name="profile_layouts_content_divider_width">1dp</dimen>
+    <dimen name="profile_layouts_content_avatar_text_margin">28dp</dimen>
+    <dimen name="profile_layouts_content_bottom_avatar_margin">10dp</dimen>
+    <dimen name="profile_layouts_content_bottom_avatar_size">48dp</dimen>
+    <dimen name="profile_layouts_content_button_logout_width">166dp</dimen>
+    <dimen name="profile_layouts_content_button_logout_height">36dp</dimen>
+    <dimen name="profile_layouts_content_name_text_size">24sp</dimen>
+    <dimen name="profile_layouts_content_name_text_spacing">8sp</dimen>
+    <dimen name="profile_layouts_content_caption_text_size">12sp</dimen>
+    <dimen name="profile_layouts_content_caption_text_spacing">4sp</dimen>
+    <dimen name="profile_layouts_content_main_text_size">16sp</dimen>
+    <dimen name="profile_layouts_content_main_text_spacing">8sp</dimen>
+    <dimen name="profile_layouts_content_button_text_size">14sp</dimen>
+
+    <dimen name="edit_main_picture_dialog_width">310dp</dimen>
+    <dimen name="edit_main_picture_dialog_height">220dp</dimen>
+    <dimen name="edit_main_picture_lines_margin">24dp</dimen>
+    <dimen name="edit_main_picture_text_margin">24dp</dimen>
+    <dimen name="edit_main_picture_text_size">22sp</dimen>
+
+    <dimen name="help_list_items_margin">8dp</dimen>
+    <dimen name="help_list_items_padding">15dp</dimen>
+    <dimen name="help_list_items_picture_width">120dp</dimen>
+    <dimen name="help_list_items_picture_height">80dp</dimen>
+    <dimen name="help_list_title_size">16sp</dimen>
+    <dimen name="help_list_title_padding">19dp</dimen>
+
+    <dimen name="search_toolbar_margin">10dp</dimen>
+    <dimen name="search_margins">20dp</dimen>
+    <dimen name="search_pager_item_margin">8dp</dimen>
+    <dimen name="search_searchview_margin">8dp</dimen>
+    <dimen name="search_text_size">14sp</dimen>
+    <dimen name="search_margin4">4dp</dimen>
+    <dimen name="search_margin10">10dp</dimen>
+    <dimen name="search_margin37">37dp</dimen>
+    <dimen name="search_margin54">54dp</dimen>
+
+    <dimen name="news_list_items_margin">8dp</dimen>
+    <dimen name="news_list_body_margin">10dp</dimen>
+    <dimen name="news_list_img_margin">4dp</dimen>
+    <dimen name="news_list_img_negative_bottom_margin">-14dp</dimen>
+    <dimen name="news_list_filter_padding">20dp</dimen>
+    <dimen name="news_filter_list_margins">20dp</dimen>
+    <dimen name="news_list_body_sides_margin">26dp</dimen>
+    <dimen name="news_list_date_margin">16dp</dimen>
+
+    <dimen name="event_detail_margin_54">54dp</dimen>
+    <dimen name="event_detail_margin_30">30dp</dimen>
+    <dimen name="event_detail_margin_25">25dp</dimen>
+    <dimen name="event_detail_margin_23">23dp</dimen>
+    <dimen name="event_detail_margin_20">20dp</dimen>
+    <dimen name="event_detail_margin_19">19dp</dimen>
+    <dimen name="event_detail_margin_16">16dp</dimen>
+    <dimen name="event_detail_margin_15">15dp</dimen>
+    <dimen name="event_detail_margin_11">11dp</dimen>
+    <dimen name="event_detail_margin_10">10dp</dimen>
+    <dimen name="event_detail_margin_9">9dp</dimen>
+    <dimen name="event_detail_margin_7">7dp</dimen>
+    <dimen name="event_detail_margin_6">6dp</dimen>
+    <dimen name="event_detail_gradient_width">24dp</dimen>
+
+    <dimen name="divider_size">1dp</dimen>
+
+    <dimen name="auth_title_left_margin">56dp</dimen>
+    <dimen name="auth_title_right_margin">55dp</dimen>
+    <dimen name="auth_social_icons_margin">80dp</dimen>
+    <dimen name="auth_divider_thickness">1dp</dimen>
+    <dimen name="auth_margin_3">3dp</dimen>
+    <dimen name="auth_margin_13">13dp</dimen>
+    <dimen name="auth_margin_14">14dp</dimen>
+    <dimen name="auth_margin_20">20dp</dimen>
+    <dimen name="auth_margin_26">26dp</dimen>
+    <dimen name="auth_margin_40">40dp</dimen>
+
+</resources>

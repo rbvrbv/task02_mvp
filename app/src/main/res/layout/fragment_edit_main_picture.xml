@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="@dimen/edit_main_picture_dialog_width"
+    android:minHeight="@dimen/edit_main_picture_dialog_height"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.main.profile.EditMainPictureFragment">
+
+    <LinearLayout
+        android:id="@+id/edit_main_pic_select_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:layout_marginStart="@dimen/edit_main_picture_lines_margin">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/upload"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/edit_main_picture_text_margin"
+            android:textAppearance="@style/HelperText.Text2"
+            android:text="@string/edit_main_text_photo_select_photo"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/edit_main_pic_take_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:layout_marginStart="@dimen/edit_main_picture_lines_margin">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/camera"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/edit_main_picture_text_margin"
+            android:textAppearance="@style/HelperText.Text2"
+            android:text="@string/edit_main_text_photo_take_photo"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/edit_main_pic_delete_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:layout_marginStart="@dimen/edit_main_picture_lines_margin">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/delete"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/edit_main_picture_text_margin"
+            android:textAppearance="@style/HelperText.Text2"
+            android:text="@string/edit_main_text_photo_delete_photo"/>
+
+    </LinearLayout>
+
+</LinearLayout>
